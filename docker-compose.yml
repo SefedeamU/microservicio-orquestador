@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  orquestador:
+    image: microservicio_orquestador:latest
+    container_name: microservicio_orquestador
+    ports:
+      - "8081:8080"
+    networks:
+      - microservicios_network_mv2
+
+networks:
+  microservicios_network_mv2:
+    external: true

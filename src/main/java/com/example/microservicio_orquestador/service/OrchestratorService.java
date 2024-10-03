@@ -361,4 +361,15 @@ public class OrchestratorService {
                 .bodyToMono(Void.class)
                 .block();
     }
+
+    //Importante (conexión entre proyectos y tareas):
+    public List<TareaDto> obtenerTareasPorProyecto(Long proyectoId) {
+        return webClientBuilder.build()
+                .get()
+                .uri(proyectosUrl + "/proyectos/{id}/tareas", proyectoId)
+                .retrieve()
+                .bodyToFlux(TareaDto.class)
+                .collectList()
+                .block();
+    }
 }

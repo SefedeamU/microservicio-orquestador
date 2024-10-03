@@ -103,10 +103,10 @@ public class OrchestratorController {
         return orchestratorService.getUsuariosByProyectoId(id);
     }
 
-    @GetMapping("/proyectos/{id}/tareas")
-    public List<TareaDto> getTareasByProyectoId(@PathVariable Long id) {
-        return orchestratorService.getTareasByProyectoId(id);
-    }
+    //@GetMapping("/proyectos/{id}/tareas")
+    //public List<TareaDto> getTareasByProyectoId(@PathVariable Long id) {
+      //  return orchestratorService.getTareasByProyectoId(id);
+  //  }
 
     // Usuarios_Proyectos
     @PostMapping("/usuarios_proyectos")
@@ -185,5 +185,11 @@ public class OrchestratorController {
     @DeleteMapping("/comments/{commentId}")
     public void deleteComment(@PathVariable Long commentId) {
         orchestratorService.deleteComment(commentId);
+    }
+
+    //Importante (conexión entre proyectos y tareas):
+    @GetMapping("/proyectos/{id}/tareas")
+    public List<TareaDto> obtenerTareasPorProyecto(@PathVariable Long id) {
+        return orchestratorService.obtenerTareasPorProyecto(id);
     }
 }
