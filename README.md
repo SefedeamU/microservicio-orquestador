@@ -207,24 +207,8 @@ Este proyecto es un microservicio para la orquestación de usuarios, roles, proy
         "usuarioId": "number"
       }
       ```
-- **GET /orchestrator/comments**: Obtener comentarios por ID de tarea.
-    - **Params**:
-      ```json
-      {
-        "tarea_id": "number"
-      }
-      ```
+
 - **GET /orchestrator/comments/{commentId}**: Obtener un comentario por ID.
-- **PUT /orchestrator/comments/{commentId}**: Actualizar un comentario por ID.
-    - **Body**:
-      ```json
-      {
-        "contenido": "string",
-        "tareaId": "number",
-        "usuarioId": "number"
-      }
-      ```
-- **DELETE /orchestrator/comments/{commentId}**: Eliminar un comentario por ID.
 
 ## Contribuir
 
