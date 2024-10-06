@@ -23,8 +23,8 @@
               }
             },
             "url": {
-              "raw": "54.234.150.200:8081/orchestrator/users",
-              "host": ["54.234.150.200:8081"],
+              "raw": "http://54.234.150.200:8081/orchestrator/users",
+              "host": ["http://54.234.150.200:8081"],
               "path": ["orchestrator", "users"]
             }
           }
@@ -44,8 +44,8 @@
               }
             },
             "url": {
-              "raw": "54.234.150.200:8081/orchestrator/users/login",
-              "host": ["54.234.150.200:8081"],
+              "raw": "http://54.234.150.200:8081/orchestrator/users/login",
+              "host": ["http://54.234.150.200:8081"],
               "path": ["orchestrator", "users", "login"]
             }
           }
@@ -62,8 +62,8 @@
               }
             ],
             "url": {
-              "raw": "54.234.150.200:8081/orchestrator/users",
-              "host": ["54.234.150.200:8081"],
+              "raw": "http://54.234.150.200:8081/orchestrator/users",
+              "host": ["http://54.234.150.200:8081"],
               "path": ["orchestrator", "users"]
             }
           }
@@ -74,8 +74,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "54.234.150.200:8081/orchestrator/users/{{id}}",
-              "host": ["54.234.150.200:8081"],
+              "raw": "http://54.234.150.200:8081/orchestrator/users/{{id}}",
+              "host": ["http://54.234.150.200:8081"],
               "path": ["orchestrator", "users", "{{id}}"]
             }
           }
@@ -95,8 +95,8 @@
               }
             },
             "url": {
-              "raw": "54.234.150.200:8081/orchestrator/users/{{id}}",
-              "host": ["54.234.150.200:8081"],
+              "raw": "http://54.234.150.200:8081/orchestrator/users/{{id}}",
+              "host": ["http://54.234.150.200:8081"],
               "path": ["orchestrator", "users", "{{id}}"]
             }
           }
@@ -107,8 +107,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "54.234.150.200:8081/orchestrator/users/{{id}}",
-              "host": ["54.234.150.200:8081"],
+              "raw": "http://54.234.150.200:8081/orchestrator/users/{{id}}",
+              "host": ["http://54.234.150.200:8081"],
               "path": ["orchestrator", "users", "{{id}}"]
             }
           }
@@ -133,8 +133,8 @@
               }
             },
             "url": {
-              "raw": "54.234.150.200:8081/orchestrator/roles",
-              "host": ["54.234.150.200:8081"],
+              "raw": "http://54.234.150.200:8081/orchestrator/roles",
+              "host": ["http://54.234.150.200:8081"],
               "path": ["orchestrator", "roles"]
             }
           }
@@ -151,8 +151,8 @@
               }
             ],
             "url": {
-              "raw": "54.234.150.200:8081/orchestrator/roles",
-              "host": ["54.234.150.200:8081"],
+              "raw": "http://54.234.150.200:8081/orchestrator/roles",
+              "host": ["http://54.234.150.200:8081"],
               "path": ["orchestrator", "roles"]
             }
           }
@@ -163,8 +163,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "54.234.150.200:8081/orchestrator/roles/{{id}}",
-              "host": ["54.234.150.200:8081"],
+              "raw": "http://54.234.150.200:8081/orchestrator/roles/{{id}}",
+              "host": ["http://54.234.150.200:8081"],
               "path": ["orchestrator", "roles", "{{id}}"]
             }
           }
@@ -184,8 +184,8 @@
               }
             },
             "url": {
-              "raw": "54.234.150.200:8081/orchestrator/roles/{{id}}",
-              "host": ["54.234.150.200:8081"],
+              "raw": "http://54.234.150.200:8081/orchestrator/roles/{{id}}",
+              "host": ["http://54.234.150.200:8081"],
               "path": ["orchestrator", "roles", "{{id}}"]
             }
           }
@@ -196,8 +196,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "54.234.150.200:8081/orchestrator/roles/{{id}}",
-              "host": ["54.234.150.200:8081"],
+              "raw": "http://54.234.150.200:8081/orchestrator/roles/{{id}}",
+              "host": ["http://54.234.150.200:8081"],
               "path": ["orchestrator", "roles", "{{id}}"]
             }
           }
