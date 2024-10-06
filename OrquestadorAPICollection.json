@@ -23,8 +23,8 @@
               }
             },
             "url": {
-              "raw": "{{base_url}}/orchestrator/users",
-              "host": ["{{base_url}}"],
+              "raw": "54.234.150.200:8081/orchestrator/users",
+              "host": ["54.234.150.200:8081"],
               "path": ["orchestrator", "users"]
             }
           }
@@ -44,8 +44,8 @@
               }
             },
             "url": {
-              "raw": "{{base_url}}/orchestrator/users/login",
-              "host": ["{{base_url}}"],
+              "raw": "54.234.150.200:8081/orchestrator/users/login",
+              "host": ["54.234.150.200:8081"],
               "path": ["orchestrator", "users", "login"]
             }
           }
@@ -62,8 +62,8 @@
               }
             ],
             "url": {
-              "raw": "{{base_url}}/orchestrator/users",
-              "host": ["{{base_url}}"],
+              "raw": "54.234.150.200:8081/orchestrator/users",
+              "host": ["54.234.150.200:8081"],
               "path": ["orchestrator", "users"]
             }
           }
@@ -74,8 +74,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{base_url}}/orchestrator/users/{{id}}",
-              "host": ["{{base_url}}"],
+              "raw": "54.234.150.200:8081/orchestrator/users/{{id}}",
+              "host": ["54.234.150.200:8081"],
               "path": ["orchestrator", "users", "{{id}}"]
             }
           }
@@ -95,8 +95,8 @@
               }
             },
             "url": {
-              "raw": "{{base_url}}/orchestrator/users/{{id}}",
-              "host": ["{{base_url}}"],
+              "raw": "54.234.150.200:8081/orchestrator/users/{{id}}",
+              "host": ["54.234.150.200:8081"],
               "path": ["orchestrator", "users", "{{id}}"]
             }
           }
@@ -107,8 +107,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{base_url}}/orchestrator/users/{{id}}",
-              "host": ["{{base_url}}"],
+              "raw": "54.234.150.200:8081/orchestrator/users/{{id}}",
+              "host": ["54.234.150.200:8081"],
               "path": ["orchestrator", "users", "{{id}}"]
             }
           }
@@ -133,8 +133,8 @@
               }
             },
             "url": {
-              "raw": "{{base_url}}/orchestrator/roles",
-              "host": ["{{base_url}}"],
+              "raw": "54.234.150.200:8081/orchestrator/roles",
+              "host": ["54.234.150.200:8081"],
               "path": ["orchestrator", "roles"]
             }
           }
@@ -151,8 +151,8 @@
               }
             ],
             "url": {
-              "raw": "{{base_url}}/orchestrator/roles",
-              "host": ["{{base_url}}"],
+              "raw": "54.234.150.200:8081/orchestrator/roles",
+              "host": ["54.234.150.200:8081"],
               "path": ["orchestrator", "roles"]
             }
           }
@@ -163,8 +163,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "{{base_url}}/orchestrator/roles/{{id}}",
-              "host": ["{{base_url}}"],
+              "raw": "54.234.150.200:8081/orchestrator/roles/{{id}}",
+              "host": ["54.234.150.200:8081"],
               "path": ["orchestrator", "roles", "{{id}}"]
             }
           }
@@ -184,8 +184,8 @@
               }
             },
             "url": {
-              "raw": "{{base_url}}/orchestrator/roles/{{id}}",
-              "host": ["{{base_url}}"],
+              "raw": "54.234.150.200:8081/orchestrator/roles/{{id}}",
+              "host": ["54.234.150.200:8081"],
               "path": ["orchestrator", "roles", "{{id}}"]
             }
           }
@@ -196,8 +196,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "{{base_url}}/orchestrator/roles/{{id}}",
-              "host": ["{{base_url}}"],
+              "raw": "54.234.150.200:8081/orchestrator/roles/{{id}}",
+              "host": ["54.234.150.200:8081"],
               "path": ["orchestrator", "roles", "{{id}}"]
             }
           }
@@ -222,7 +222,7 @@
               }
             },
             "url": {
-              "raw": "http://18.235.139.228:8080/orchestrator/proyectos?usuarioId={{usuarioId}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/proyectos?usuarioId={{usuarioId}}",
               "host": ["18.235.139.228"],
               "port": "8080",
               "path": ["orchestrator", "proyectos"],
@@ -241,7 +241,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://18.235.139.228:8080/orchestrator/proyectos?usuarioId={{usuarioId}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/proyectos?usuarioId={{usuarioId}}",
               "host": ["18.235.139.228"],
               "port": "8080",
               "path": ["orchestrator", "proyectos"],
@@ -260,7 +260,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://18.235.139.228:8080/orchestrator/proyectos/{{id}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/proyectos/{{id}}",
               "host": ["18.235.139.228"],
               "port": "8080",
               "path": ["orchestrator", "proyectos", "{{id}}"]
@@ -282,7 +282,7 @@
               }
             },
             "url": {
-              "raw": "http://18.235.139.228:8080/orchestrator/proyectos/{{id}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/proyectos/{{id}}",
               "host": ["18.235.139.228"],
               "port": "8080",
               "path": ["orchestrator", "proyectos", "{{id}}"]
@@ -295,7 +295,7 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://18.235.139.228:8080/orchestrator/proyectos/{{id}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/proyectos/{{id}}",
               "host": ["18.235.139.228"],
               "port": "8080",
               "path": ["orchestrator", "proyectos", "{{id}}"]
@@ -308,7 +308,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://18.235.139.228:8080/orchestrator/proyectos/{{id}}/usuarios",
+              "raw": "http://54.234.150.200:8081/orchestrator/proyectos/{{id}}/usuarios",
               "host": ["18.235.139.228"],
               "port": "8080",
               "path": ["orchestrator", "proyectos", "{{id}}", "usuarios"]
@@ -321,7 +321,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://18.235.139.228:8080/orchestrator/proyectos/{{id}}/tareas",
+              "raw": "http://54.234.150.200:8081/orchestrator/proyectos/{{id}}/tareas",
               "host": ["18.235.139.228"],
               "port": "8080",
               "path": ["orchestrator", "proyectos", "{{id}}", "tareas"]
@@ -348,7 +348,7 @@
               }
             },
             "url": {
-              "raw": "http://18.235.139.228:8080/orchestrator/usuarios_proyectos",
+              "raw": "http://54.234.150.200:8081/orchestrator/usuarios_proyectos",
               "host": ["18.235.139.228"],
               "port": "8080",
               "path": ["orchestrator", "usuarios_proyectos"]
@@ -361,7 +361,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://18.235.139.228:8080/orchestrator/usuarios_proyectos",
+              "raw": "http://54.234.150.200:8081/orchestrator/usuarios_proyectos",
               "host": ["18.235.139.228"],
               "port": "8080",
               "path": ["orchestrator", "usuarios_proyectos"]
@@ -374,7 +374,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://18.235.139.228:8080/orchestrator/usuarios_proyectos/{{id}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/usuarios_proyectos/{{id}}",
               "host": ["18.235.139.228"],
               "port": "8080",
               "path": ["orchestrator", "usuarios_proyectos", "{{id}}"]
@@ -396,7 +396,7 @@
               }
             },
             "url": {
-              "raw": "http://18.235.139.228:8080/orchestrator/usuarios_proyectos/{{id}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/usuarios_proyectos/{{id}}",
               "host": ["18.235.139.228"],
               "port": "8080",
               "path": ["orchestrator", "usuarios_proyectos", "{{id}}"]
@@ -409,7 +409,7 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://18.235.139.228:8080/orchestrator/usuarios_proyectos/{{id}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/usuarios_proyectos/{{id}}",
               "host": ["18.235.139.228"],
               "port": "8080",
               "path": ["orchestrator", "usuarios_proyectos", "{{id}}"]
@@ -436,7 +436,7 @@
               }
             },
             "url": {
-              "raw": "http://18.235.139.228:8002/orchestrator/tasks",
+              "raw": "http://54.234.150.200:8081/orchestrator/tasks",
               "host": ["18.235.139.228"],
               "port": "8002",
               "path": ["orchestrator", "tasks"]
@@ -449,7 +449,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://18.235.139.228:8002/orchestrator/tasks?skip={{skip}}&limit={{limit}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/tasks?skip={{skip}}&limit={{limit}}",
               "host": ["18.235.139.228"],
               "port": "8002",
               "path": ["orchestrator", "tasks"],
@@ -472,7 +472,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://18.235.139.228:8002/orchestrator/tasks/{{taskId}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/tasks/{{taskId}}",
               "host": ["18.235.139.228"],
               "port": "8002",
               "path": ["orchestrator", "tasks", "{{taskId}}"]
@@ -494,7 +494,7 @@
               }
             },
             "url": {
-              "raw": "http://18.235.139.228:8002/orchestrator/tasks/{{taskId}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/tasks/{{taskId}}",
               "host": ["18.235.139.228"],
               "port": "8002",
               "path": ["orchestrator", "tasks", "{{taskId}}"]
@@ -507,7 +507,7 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://18.235.139.228:8002/orchestrator/tasks/{{taskId}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/tasks/{{taskId}}",
               "host": ["18.235.139.228"],
               "port": "8002",
               "path": ["orchestrator", "tasks", "{{taskId}}"]
@@ -534,7 +534,7 @@
               }
             },
             "url": {
-              "raw": "http://18.235.139.228:8002/orchestrator/comments",
+              "raw": "http://54.234.150.200:8081/orchestrator/comments",
               "host": ["18.235.139.228"],
               "port": "8002",
               "path": ["orchestrator", "comments"]
@@ -547,7 +547,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://18.235.139.228:8002/orchestrator/comments/{{commentId}}",
+              "raw": "http://54.234.150.200:8081/orchestrator/comments/{{commentId}}",
               "host": ["18.235.139.228"],
               "port": "8002",
               "path": ["orchestrator", "comments", "{{commentId}}"]
