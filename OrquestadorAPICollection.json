@@ -1,7 +1,7 @@
 {
   "info": {
-    "_postman_id": "12345678-abcd-efgh-ijkl-1234567890ab",
-    "name": "Orchestrator API",
+    "_postman_id": "98765432-abcd-efgh-ijkl-9876543210ab",
+    "name": "OrquestadorAPI",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
@@ -96,7 +96,6 @@
           "name": "Obtener usuario por ID",
           "request": {
             "method": "GET",
-            "header": [],
             "url": {
               "raw": "http://localhost:8081/orchestrator/users/{{id}}",
               "protocol": "http",
@@ -111,16 +110,11 @@
               ]
             }
           }
-        }
-      ]
-    },
-    {
-      "name": "Roles",
-      "item": [
+        },
         {
-          "name": "Crear rol",
+          "name": "Actualizar usuario",
           "request": {
-            "method": "POST",
+            "method": "PUT",
             "header": [
               {
                 "key": "Content-Type",
@@ -130,10 +124,10 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\"nombre\": \"Admin\", \"descripcion\": \"Administrador del sistema\"}"
+              "raw": "{\"nombre\": \"Jane Doe\", \"email\": \"janedoe@example.com\", \"password\": \"654321\"}"
             },
             "url": {
-              "raw": "http://localhost:8081/orchestrator/roles",
+              "raw": "http://localhost:8081/orchestrator/users/{{id}}",
               "protocol": "http",
               "host": [
                 "localhost"
@@ -141,24 +135,18 @@
               "port": "8081",
               "path": [
                 "orchestrator",
-                "roles"
+                "users",
+                "{{id}}"
               ]
             }
           }
         },
         {
-          "name": "Obtener todos los roles",
+          "name": "Eliminar usuario",
           "request": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{token}}",
-                "type": "text"
-              }
-            ],
+            "method": "DELETE",
             "url": {
-              "raw": "http://localhost:8081/orchestrator/roles",
+              "raw": "http://localhost:8081/orchestrator/users/{{id}}",
               "protocol": "http",
               "host": [
                 "localhost"
@@ -166,7 +154,8 @@
               "port": "8081",
               "path": [
                 "orchestrator",
-                "roles"
+                "users",
+                "{{id}}"
               ]
             }
           }
@@ -234,6 +223,114 @@
               ]
             }
           }
+        },
+        {
+          "name": "Obtener proyecto por ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8081/orchestrator/proyectos/{{id}}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "orchestrator",
+                "proyectos",
+                "{{id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Actualizar proyecto",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"nombre\": \"Proyecto Actualizado\", \"descripcion\": \"Descripción actualizada\", \"fechaInicio\": \"2023-10-01\", \"fechaFin\": \"2024-01-01\"}"
+            },
+            "url": {
+              "raw": "http://localhost:8081/orchestrator/proyectos/{{id}}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "orchestrator",
+                "proyectos",
+                "{{id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Eliminar proyecto",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:8081/orchestrator/proyectos/{{id}}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "orchestrator",
+                "proyectos",
+                "{{id}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Obtener usuarios por ID de proyecto",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8081/orchestrator/proyectos/{{id}}/usuarios",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "orchestrator",
+                "proyectos",
+                "{{id}}",
+                "usuarios"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Obtener tareas por ID de proyecto",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:8081/orchestrator/proyectos/{{id}}/tareas",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "orchestrator",
+                "proyectos",
+                "{{id}}",
+                "tareas"
+              ]
+            }
+          }
         }
       ]
     },
@@ -265,26 +362,6 @@
               "path": [
                 "orchestrator",
                 "tasks"
-              ]
-            }
-          }
-        },
-        {
-          "name": "Obtener tarea por ID",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "http://localhost:8081/orchestrator/tasks/{{taskId}}",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "8081",
-              "path": [
-                "orchestrator",
-                "tasks",
-                "{{taskId}}"
               ]
             }
           }
@@ -323,7 +400,25 @@
           "name": "Eliminar tarea",
           "request": {
             "method": "DELETE",
-            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/orchestrator/tasks/{{taskId}}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8081",
+              "path": [
+                "orchestrator",
+                "tasks",
+                "{{taskId}}"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Obtener tarea por ID",
+          "request": {
+            "method": "GET",
             "url": {
               "raw": "http://localhost:8081/orchestrator/tasks/{{taskId}}",
               "protocol": "http",
