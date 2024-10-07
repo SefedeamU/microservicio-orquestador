@@ -16,12 +16,12 @@ public class OrchestratorController {
 
     // Usuarios
     @PostMapping("/users")
-    public RegisterDto createUser(@RequestBody RegisterDto registerDto) {
+    public RegisterResponseDto createUser(@RequestBody RegisterDto registerDto) {
         return orchestratorService.createUser(registerDto);
     }
 
     @PostMapping("/users/login")
-    public RegisterDto loginUser(@RequestBody LoginDto loginDto) {
+    public LoginResponseDto loginUser(@RequestBody LoginDto loginDto) {
         return orchestratorService.loginUser(loginDto);
     }
 

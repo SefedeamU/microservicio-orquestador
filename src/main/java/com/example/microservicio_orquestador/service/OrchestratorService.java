@@ -3,6 +3,7 @@ package com.example.microservicio_orquestador.service;
 import com.example.microservicio_orquestador.dto.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -24,23 +25,25 @@ public class OrchestratorService {
     private String tareasUrl;
 
     // Usuarios
-    public RegisterDto createUser(RegisterDto registerDto) {
+    public RegisterResponseDto createUser(RegisterDto registerDto) {
         return webClientBuilder.build()
                 .post()
                 .uri(usuariosUrl + "/users")
+                .contentType(MediaType.APPLICATION_JSON)
                 .bodyValue(registerDto)
                 .retrieve()
-                .bodyToMono(RegisterDto.class)
+                .bodyToMono(RegisterResponseDto.class)
                 .block();
     }
 
-    public RegisterDto loginUser(LoginDto loginDto) {
+    public LoginResponseDto loginUser(LoginDto loginDto) {
         return webClientBuilder.build()
                 .post()
                 .uri(usuariosUrl + "/users/login")
+                .contentType(MediaType.APPLICATION_JSON)
                 .bodyValue(loginDto)
                 .retrieve()
-                .bodyToMono(RegisterDto.class)
+                .bodyToMono(LoginResponseDto.class)
                 .block();
     }
 
