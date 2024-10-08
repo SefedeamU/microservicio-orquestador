@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   orquestador:
-    image: microservicio_orquestador:latest
+    build: .
     container_name: microservicio_orquestador
     ports:
       - "8081:8080"
