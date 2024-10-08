@@ -1,3 +1,4 @@
+com\example\microservicio_orquestador\dto\LoginResponseDto.class
 com\example\microservicio_orquestador\service\OrchestratorService.class
 com\example\microservicio_orquestador\dto\LoginDto.class
 com\example\microservicio_orquestador\dto\CommentDto.class
@@ -7,6 +8,7 @@ com\example\microservicio_orquestador\exception\GlobalExceptionHandler.class
 com\example\microservicio_orquestador\dto\UsuarioDto.class
 com\example\microservicio_orquestador\dto\TareaDto.class
 com\example\microservicio_orquestador\dto\ProyectoDto.class
+com\example\microservicio_orquestador\dto\RegisterResponseDto.class
 com\example\microservicio_orquestador\dto\UsuarioProyectoDto.class
 com\example\microservicio_orquestador\MicroservicioOrquestadorApplication.class
 com\example\microservicio_orquestador\controller\OrchestratorController.class

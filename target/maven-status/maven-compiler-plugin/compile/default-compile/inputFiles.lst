@@ -2,8 +2,10 @@ C:\Users\sergi\IdeaProjects\microservicio_orquestador\src\main\java\com\example\
 C:\Users\sergi\IdeaProjects\microservicio_orquestador\src\main\java\com\example\microservicio_orquestador\controller\OrchestratorController.java
 C:\Users\sergi\IdeaProjects\microservicio_orquestador\src\main\java\com\example\microservicio_orquestador\dto\CommentDto.java
 C:\Users\sergi\IdeaProjects\microservicio_orquestador\src\main\java\com\example\microservicio_orquestador\dto\LoginDto.java
+C:\Users\sergi\IdeaProjects\microservicio_orquestador\src\main\java\com\example\microservicio_orquestador\dto\LoginResponseDto.java
 C:\Users\sergi\IdeaProjects\microservicio_orquestador\src\main\java\com\example\microservicio_orquestador\dto\ProyectoDto.java
 C:\Users\sergi\IdeaProjects\microservicio_orquestador\src\main\java\com\example\microservicio_orquestador\dto\RegisterDto.java
+C:\Users\sergi\IdeaProjects\microservicio_orquestador\src\main\java\com\example\microservicio_orquestador\dto\RegisterResponseDto.java
 C:\Users\sergi\IdeaProjects\microservicio_orquestador\src\main\java\com\example\microservicio_orquestador\dto\RolDto.java
 C:\Users\sergi\IdeaProjects\microservicio_orquestador\src\main\java\com\example\microservicio_orquestador\dto\TareaDto.java
 C:\Users\sergi\IdeaProjects\microservicio_orquestador\src\main\java\com\example\microservicio_orquestador\dto\UsuarioDto.java
