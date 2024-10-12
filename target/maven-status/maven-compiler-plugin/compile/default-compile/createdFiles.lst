@@ -4,8 +4,10 @@ com\example\microservicio_orquestador\dto\LoginDto.class
 com\example\microservicio_orquestador\dto\CommentDto.class
 com\example\microservicio_orquestador\dto\RegisterDto.class
 com\example\microservicio_orquestador\exception\CustomException.class
+com\example\microservicio_orquestador\config\CorsConfig$1.class
 com\example\microservicio_orquestador\exception\GlobalExceptionHandler.class
 com\example\microservicio_orquestador\dto\UsuarioDto.class
+com\example\microservicio_orquestador\config\CorsConfig.class
 com\example\microservicio_orquestador\dto\TareaDto.class
 com\example\microservicio_orquestador\dto\ProyectoDto.class
 com\example\microservicio_orquestador\dto\RegisterResponseDto.class
