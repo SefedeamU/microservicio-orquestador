@@ -5,7 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.ClientResponse;
 import org.springframework.web.reactive.function.client.WebClient;
+import org.springframework.web.reactive.function.client.WebClientResponseException;
 
 import java.util.List;
 
@@ -26,14 +28,25 @@ public class OrchestratorService {
 
     // Usuarios
     public RegisterResponseDto createUser(RegisterDto registerDto) {
-        return webClientBuilder.build()
-                .post()
-                .uri(usuariosUrl + "/users")
-                .contentType(MediaType.APPLICATION_JSON)
-                .bodyValue(registerDto)
-                .retrieve()
-                .bodyToMono(RegisterResponseDto.class)
-                .block();
+        try {
+            return webClientBuilder.build()
+                    .post()
+                    .uri(usuariosUrl + "/users")
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .bodyValue(registerDto)
+                    .retrieve()
+                    .onStatus(status -> status.is4xxClientError() || status.is5xxServerError(),
+                            ClientResponse::createException)
+                    .bodyToMono(RegisterResponseDto.class)
+                    .block();
+        } catch (WebClientResponseException e) {
+            System.err.println("Error response code: " + e.getStatusCode());
+            System.err.println("Error response body: " + e.getResponseBodyAsString());
+            throw e;
+        } catch (Exception e) {
+            System.err.println("An error occurred: " + e.getMessage());
+            throw e;
+        }
     }
 
     public LoginResponseDto loginUser(LoginDto loginDto) {
